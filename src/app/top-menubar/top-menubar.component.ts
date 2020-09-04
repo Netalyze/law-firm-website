@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-top-menubar',
@@ -6,10 +7,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-menubar.component.css']
 })
 export class TopMenubarComponent implements OnInit {
+  items: MenuItem[];
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.items = [
+      {
+        label: 'O nas'
+      },
+      {
+        label: 'Nasze kancelarie',
+        items: [
+          {label: 'Gdańsk'},
+          {label: 'Katowice'},
+          {label: 'Warszawa'},
+          {label: 'Wrocław'}
+        ]
+      },
+      {
+        label: 'Oferty pracy',
+      },
+      {
+        label: 'Kontakt'
+      }
+    ];
   }
 
 }
