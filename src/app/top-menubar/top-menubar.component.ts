@@ -12,6 +12,8 @@ export class TopMenubarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // dokumentacja do edycji elementów:
+    // https://www.primefaces.org/primeng/showcase/#/menumodel
     this.items = [
       {
         label: 'O nas'
@@ -24,6 +26,9 @@ export class TopMenubarComponent implements OnInit {
           {label: 'Warszawa'},
           {label: 'Wrocław'}
         ]
+      },
+      {
+        label: 'Usługi'
       },
       {
         label: 'Oferty pracy',
