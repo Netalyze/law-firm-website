@@ -1,0 +1,22 @@
+/* Odstęp menubara przed logo */
+:host ::ng-deep .p-menubar {
+  padding-left: 50px;
+}
+
+/* Pozycja logo przy oknie większym niż 960 px */
+:host ::ng-deep .p-menubar #logo {
+  position: absolute;
+  left: 16px;
+  top: 17px;
+  height: 40px;
+}
+
+/* Logo przy oknie mniejszym niż 960 px
+Uwaga: Wartość musi zgadzać się z tą w themes.css 
+*/
+@media screen and (max-width: 960px) {
+  :host ::ng-deep .p-menubar #logo {
+    top: 4px;
+    left: 7px;
+  }
+}
