@@ -1,0 +1,14 @@
+/*Wystylowanie bannera - wysokość do zmiany żeby zgrywała się dobrze z menu*/
+.banner {
+    width: 100%;
+    background-image: url("../../assets/images/banner.jpg");
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.p-d-flex {
+    height: 90vh;
+}

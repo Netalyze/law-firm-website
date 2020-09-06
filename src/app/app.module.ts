@@ -6,16 +6,20 @@ import { AppComponent } from './app.component';
 import { TopMenubarComponent } from './top-menubar/top-menubar.component';
 
 import { MenubarModule } from 'primeng/menubar';
+import {ButtonModule} from 'primeng/button';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopMenubarComponent
+    TopMenubarComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MenubarModule
+    MenubarModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
