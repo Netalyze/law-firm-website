@@ -9,6 +9,22 @@
     overflow: hidden;
 }
 
+/*Kontener na button i naglowek*/
 .p-d-flex {
     height: 90vh;
+    width: 50%;
+}
+
+.content {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 960px) {
+    .p-d-flex {
+        width: 100%;
+    }
+    .content {
+        text-align: center;
+    }
 }
