@@ -8,12 +8,14 @@ import { TopMenubarComponent } from './top-menubar/top-menubar.component';
 import { MenubarModule } from 'primeng/menubar';
 import {ButtonModule} from 'primeng/button';
 import { BannerComponent } from './banner/banner.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopMenubarComponent,
-    BannerComponent
+    BannerComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
