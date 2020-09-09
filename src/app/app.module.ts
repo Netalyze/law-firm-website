@@ -11,6 +11,7 @@ import {CardModule} from 'primeng/card';
 import { BannerComponent } from './banner/banner.component';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
+import { CardListComponent } from './card-list/card-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CardComponent } from './card/card.component';
     TopMenubarComponent,
     BannerComponent,
     HomeComponent,
-    CardComponent
+    CardComponent,
+    CardListComponent
   ],
   imports: [
     BrowserModule,
