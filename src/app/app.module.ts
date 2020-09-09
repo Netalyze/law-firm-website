@@ -7,21 +7,25 @@ import { TopMenubarComponent } from './top-menubar/top-menubar.component';
 
 import { MenubarModule } from 'primeng/menubar';
 import {ButtonModule} from 'primeng/button';
+import {CardModule} from 'primeng/card';
 import { BannerComponent } from './banner/banner.component';
 import { HomeComponent } from './home/home.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopMenubarComponent,
     BannerComponent,
-    HomeComponent
+    HomeComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MenubarModule,
-    ButtonModule
+    ButtonModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
