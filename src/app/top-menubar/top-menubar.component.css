@@ -1,6 +1,6 @@
 /* Odstęp menubara przed logo */
 :host ::ng-deep .p-menubar {
-  padding-left: 50px;
+  padding-left: 60px;
 }
 
 /* Pozycja logo przy oknie większym niż 960 px */
