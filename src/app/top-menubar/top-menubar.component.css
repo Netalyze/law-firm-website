@@ -7,7 +7,7 @@
 :host ::ng-deep .p-menubar #logo {
   position: absolute;
   left: 16px;
-  top: 17px;
+  top: 9px;
   height: 40px;
 }
 
@@ -17,6 +17,6 @@ Uwaga: Wartość musi zgadzać się z tą w themes.css
 @media screen and (max-width: 960px) {
   :host ::ng-deep .p-menubar #logo {
     top: 4px;
-    left: 7px;
+    left: 9px;
   }
 }
