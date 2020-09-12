@@ -5,12 +5,12 @@ ul {
 }
 
 .card-list-container {
-    background-color: whitesmoke;
+    background-color: #121727;
 }
 
 .p-text-center {
     font-size: 2.5em;
-    color: forestgreen;
+    color: #b29688;
     padding-top: 30px;
     margin-bottom: 20px;
 }
