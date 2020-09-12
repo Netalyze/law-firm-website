@@ -11,7 +11,7 @@
 
 /* Tekst nad przyciskiem */
 p {
-    color: darkslategray;
+    color: #b29688;
 }
 
 /*Kontener na button i naglowek*/
@@ -22,14 +22,15 @@ p {
 
 /* Kolor przycisku */
 .p-button-lg {
-    background-color: #fbfaf5;
-    border-color: dimgray;
-    color: forestgreen;
+    background: none;
+    border-color: lightgray;
+    color: lightgray;
+    border-radius: 0;
 }
 
 .p-button-lg:hover {
-    background-color: forestgreen;
-    border-color: forestgreen;
+    background: none;
+    border-color: white;
     color: white;
 }
 
