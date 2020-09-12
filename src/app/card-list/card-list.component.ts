@@ -9,9 +9,9 @@ import { Card } from '../card';
 export class CardListComponent implements OnInit {
 
   cards: Card[] = [
-    {title: 'Wypadki drogowe', description:'Lorem ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod tem incididunt ut labore et dolore.'},
-    {title: 'Wypadki niedrogowe', description:'Lorem ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod tem incididunt ut labore et dolore.'},
-    {title: 'Wypadki prawie drogowe', description:'Lorem ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod tem incididunt ut labore et dolore.'}
+    { image: '../../assets/images/card_1.png', title: 'Wypadki drogowe', description:'Lorem ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod tem incididunt ut labore et dolore.'},
+    { image: '../../assets/images/card_2.jpg', title: 'Wypadki niedrogowe', description:'Lorem ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod tem incididunt ut labore et dolore.'},
+    { image: '../../assets/images/card_3.jpg', title: 'Wypadki prawie drogowe', description:'Lorem ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod tem incididunt ut labore et dolore.'}
   ];
 
   constructor() { }
