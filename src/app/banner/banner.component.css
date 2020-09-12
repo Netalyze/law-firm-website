@@ -9,10 +9,28 @@
     overflow: hidden;
 }
 
+/* Tekst nad przyciskiem */
+p {
+    color: darkslategray;
+}
+
 /*Kontener na button i naglowek*/
 .p-d-flex {
     height: 90vh;
     width: 50%;
+}
+
+/* Kolor przycisku */
+.p-button-lg {
+    background-color: #fbfaf5;
+    border-color: darkslategray;
+    color: forestgreen;
+}
+
+.p-button-lg:hover {
+    background-color: forestgreen;
+    border-color: forestgreen;
+    color: white;
 }
 
 .content {
