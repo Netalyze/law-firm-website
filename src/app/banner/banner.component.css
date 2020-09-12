@@ -23,7 +23,7 @@ p {
 /* Kolor przycisku */
 .p-button-lg {
     background-color: #fbfaf5;
-    border-color: darkslategray;
+    border-color: dimgray;
     color: forestgreen;
 }
 
