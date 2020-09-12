@@ -22,7 +22,6 @@
 .card .image {
   width: 100%;
   height: 60%;
-  background-image: url("../../assets/images/legal_1.png");
   background-position: center;
   background-size: cover;
   margin-bottom: 0.5rem;
