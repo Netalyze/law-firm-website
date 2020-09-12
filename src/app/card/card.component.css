@@ -15,6 +15,7 @@
 
 .card h2 {
   font-weight: 200;
+  letter-spacing: 0.03em;
   transition: 0.5s ease;
   color: #b29688;
 }
