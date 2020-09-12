@@ -1,14 +1,17 @@
 /* Odstęp menubara przed logo */
 :host ::ng-deep .p-menubar {
-  padding-left: 60px;
+  font-size: 1.2em;
+  padding-left: 300px;
+  background-color: white;
+  padding: 30px 30px 30px 300px;
 }
 
 /* Pozycja logo przy oknie większym niż 960 px */
 :host ::ng-deep .p-menubar #logo {
   position: absolute;
   left: 16px;
-  top: 9px;
-  height: 40px;
+  top: 25px;
+  height: 50px;
 }
 
 /* Logo przy oknie mniejszym niż 960 px
@@ -16,7 +19,19 @@ Uwaga: Wartość musi zgadzać się z tą w themes.css
 */
 @media screen and (max-width: 960px) {
   :host ::ng-deep .p-menubar #logo {
-    top: 4px;
+    top: 19px;
     left: 9px;
   }
+}
+
+/* Kolory przyciku rozwijania menu */
+:host ::ng-deep .p-menubar-button {
+  color: forestgreen;
+  
+}
+
+:host ::ng-deep .p-menubar-button:hover {
+  color: white;
+  background-color: forestgreen;
+  
 }
