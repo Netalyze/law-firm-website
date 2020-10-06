@@ -12,6 +12,9 @@ import { BannerComponent } from './banner/banner.component';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
 import { CardListComponent } from './card-list/card-list.component';
+import { LeftCardComponent } from './left-card/left-card.component';
+import { RightCardComponent } from './right-card/right-card.component';
+import { MidCardComponent } from './mid-card/mid-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { CardListComponent } from './card-list/card-list.component';
     BannerComponent,
     HomeComponent,
     CardComponent,
-    CardListComponent
+    CardListComponent,
+    LeftCardComponent,
+    RightCardComponent,
+    MidCardComponent
   ],
   imports: [
     BrowserModule,
