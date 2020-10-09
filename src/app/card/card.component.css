@@ -8,6 +8,10 @@
   background-color: #121727;
   
 }
+/* 
+.card .image {
+  transition: 0.5s ease;
+}  */
 
 .card:hover {
   transform: translate(0.8rem, -0.8rem);
@@ -62,18 +66,6 @@
   text-align-last: center;
 }
 
-a:link {
-  background-color: yellow;
+a {
+  text-decoration: none;
 }
-
-a:visited {
-  background-color: cyan;
-}
-
-a:hover {
-  background-color: lightgreen;
-}
-
-a:active {
-  background-color: hotpink;
-} 
