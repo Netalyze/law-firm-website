@@ -24,6 +24,28 @@ Uwaga: Wartość musi zgadzać się z tą w themes.css
   }
 }
 
+/* Obwódka elementu w menu */
+:host ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:focus {
+  box-shadow: none;
+}
+
+/* Kolor elementu menu po hooverze */
+:host ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link,
+.p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link:not(.p-disabled):hover {
+  background: #121727;
+}
+
+/* Kolor tła submenu */
+:host ::ng-deep .p-menubar .p-submenu-list {
+  background: #121727;
+}
+
+/* Kolor tła menu */
+:host ::ng-deep .p-menubar .p-menubar-root-list {
+  background: #121727;
+}
+
+/* Hover na elemencie menu */
 :host ::ng-deep .p-menuitem a:hover {
   background-color: #121727 !important;
   text-decoration: underline;
@@ -31,6 +53,7 @@ Uwaga: Wartość musi zgadzać się z tą w themes.css
   text-decoration-style: solid;
 }
 
+/* Styling tekstu w menu */
 :host ::ng-deep .p-menuitem-text {
   color: #b29688 !important;
   letter-spacing: 0.18em;
@@ -38,14 +61,17 @@ Uwaga: Wartość musi zgadzać się z tą w themes.css
   font-weight: 200;
 }
 
-
 /* Kolory przyciku rozwijania menu */
 :host ::ng-deep .p-menubar-button {
   color: #b29688;
-  
 }
 
 :host ::ng-deep .p-menubar-button:hover {
   color: #121727;
   background-color: #b29688;
+}
+
+/* Obwódka przycisku hamburger rozwijania menu */
+:host ::ng-deep .p-menubar .p-menubar-button:focus {
+  box-shadow: none;
 }
