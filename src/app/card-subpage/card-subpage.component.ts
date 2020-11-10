@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import subpageData from 'src/cards-subpage-data.json'
 
 @Component({
   selector: 'app-card-subpage',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardSubpageComponent implements OnInit {
 
-  constructor() { }
+  // wartość 'link' przekazana z card-list.componenet
+  subpage: string
+  // slownik wybrany z cards-subpage-data
+  data: any
 
-  ngOnInit(): void {
+  constructor(private router: Router) { 
+    // "Rozpakowujemy" wartość subpageLink przekazają z parenta, zapisuje się ona w history.state
+    this.router.getCurrentNavigation().extras.state.subpageLink
   }
 
+  ngOnInit(): void {
+    this.subpage = history.state.subpageLink
+    this.data = subpageData[this.subpage]
+  }
 }

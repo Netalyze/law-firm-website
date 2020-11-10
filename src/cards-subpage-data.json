@@ -1,0 +1,15 @@
+{
+    "wypadki-drogowe": {
+        "naglowek": "NAGLOWEK DLA WYPADKOW DROGOWYCH",
+        "tekst_wstepu": "Wypadki drogowe to nasza specjalność"
+        },
+    "sprawy-rozwodowe": {
+        "naglowek": "NAGLOWEK DLA SPRAW ROZWODOWYCH",
+        "tekst_wstepu": "Jednak sprawy rozwodowe to nasza specjalność"
+    },
+    "prawo-karne": {
+        "naglowek": "NAGLOWEK DLA PRAWA KARNEGO",
+        "tekst_wstepu": "A jednak niee, bo prawo karne"
+    }
+}
+
