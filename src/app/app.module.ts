@@ -12,6 +12,7 @@ import { BannerComponent } from './banner/banner.component';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
 import { CardListComponent } from './card-list/card-list.component';
+import { CardSubpageComponent } from './card-subpage/card-subpage.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CardListComponent } from './card-list/card-list.component';
     BannerComponent,
     HomeComponent,
     CardComponent,
-    CardListComponent
+    CardListComponent,
+    CardSubpageComponent
   ],
   imports: [
     BrowserModule,
