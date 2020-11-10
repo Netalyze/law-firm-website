@@ -4,7 +4,8 @@
     class="cards p-d-flex p-flex-column p-flex-md-row p-jc-evenly p-ai-center p-jc-center p-flex-wrap"
   >
     <li *ngFor="let card of cards" class="p-mb-2 p-mr-2">
-      <a routerLink="/:{{card.link}}" [state]="{data: card.link}">
+      <!-- W state przekazujemy wartość do komponentu do którego przechodzimy -->
+      <a routerLink="/:{{card.link}}" [state]="{subpageLink: card.link}">
         <app-card [card]="card"></app-card>
       </a>
     </li>
