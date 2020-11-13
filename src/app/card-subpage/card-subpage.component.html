@@ -1,3 +1,11 @@
-<p>card-subpage works!</p>
-<p style="color: white;">{{data.naglowek}}</p>
-<p style="color: white;">{{data.tekst_wstepu}}</p>
+<div class="header-img"
+[ngStyle]="{'background-image': 'url(' + data.background + ')'}">
+</div>
+<div class="top-text-container">
+    <div class="header">
+        {{data.header}}
+    </div>
+    <div class="introduction">
+        {{data.introduction}}
+    </div>
+</div>
