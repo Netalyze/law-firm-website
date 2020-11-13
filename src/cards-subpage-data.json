@@ -1,15 +1,17 @@
 {
     "wypadki-drogowe": {
-        "naglowek": "NAGLOWEK DLA WYPADKOW DROGOWYCH",
-        "tekst_wstepu": "Wypadki drogowe to nasza specjalność"
-        },
+        "background": "../../assets/images/accidents.jpg",
+        "header": "Stłuczka? Wypadek? Zajmiemy się wszystkim za Ciebie tak, abyś Ty mógł spać spokojnie.",
+        "introduction": "W naszej kancelarii na pierwszym miejscu stawiamy klienta. Nasi kluczowi pracownicy posiadają najlepsze na rynku kwalifikacje w zakresie rozwiązywania sporów dotyczących prawa drogowego oraz biegłość w postępowaniach sądowych w procesach o wypłatę odszkodowań. Do sprawy każdego z naszych klientów podchodzimy starannie i z niezwykłą dokładnością."
+    },
     "sprawy-rozwodowe": {
-        "naglowek": "NAGLOWEK DLA SPRAW ROZWODOWYCH",
-        "tekst_wstepu": "Jednak sprawy rozwodowe to nasza specjalność"
+        "background": "",
+        "header": "",
+        "introduction": ""
     },
     "prawo-karne": {
-        "naglowek": "NAGLOWEK DLA PRAWA KARNEGO",
-        "tekst_wstepu": "A jednak niee, bo prawo karne"
+        "background": "",
+        "header": "",
+        "introduction": ""
     }
 }
-

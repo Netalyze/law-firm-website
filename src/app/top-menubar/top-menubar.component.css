@@ -75,3 +75,11 @@ Uwaga: Wartość musi zgadzać się z tą w themes.css
 :host ::ng-deep .p-menubar .p-menubar-button:focus {
   box-shadow: none;
 }
+
+:host ::ng-deep .p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link {
+  background: #121727;
+}
+
+:host ::ng-deep .p-menubar .p-menuitem-link:focus {
+  box-shadow: none;
+}
