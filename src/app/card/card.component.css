@@ -5,7 +5,7 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition: 0.5s ease;
   margin: 2rem;
-  background-color: #121727;
+  background-color: #111522;
   
 }
 
@@ -23,10 +23,6 @@
 .card p {
   color: lightgrey;
 }
-
-/* .card:hover h2 {
-  color: forestgreen;
-} */
 
 .card .image {
   width: 100%;
