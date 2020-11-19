@@ -15,7 +15,7 @@
 }
 
 /* Logo przy oknie mniejszym niż 960 px
-Uwaga: Wartość musi zgadzać się z tą w themes.css 
+Uwaga: Wartość musi zgadzać się z tą w themes.css
 */
 @media screen and (max-width: 960px) {
   :host ::ng-deep .p-menubar #logo {
@@ -71,7 +71,6 @@ Uwaga: Wartość musi zgadzać się z tą w themes.css
   background-color: #b29688;
 }
 
-/* Obwódka przycisku hamburger rozwijania menu */
 :host ::ng-deep .p-menubar .p-menubar-button:focus {
   box-shadow: none;
 }
