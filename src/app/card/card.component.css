@@ -38,6 +38,7 @@
   width: 4rem;
   background-color: whitesmoke;
   transition: 0.5s ease;
+  color: black;
 }
 
 .card:hover .icon-btn {
