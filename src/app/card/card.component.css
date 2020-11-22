@@ -9,6 +9,14 @@
   
 }
 
+@media screen and (max-width: 992px) {
+  .card {
+    width: 18rem;
+    margin: 0.5rem;
+    height: 25rem;
+  }
+}
+
 /* .card:hover {
   transform: translate(0.8rem, -0.8rem);
 } */
