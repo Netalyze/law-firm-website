@@ -1,6 +1,50 @@
+* {
+  background-color: #0b0e18;
+}
+
+:host ::ng-deep .p-grid{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.top-footer {
+  padding-top: 1%;
+}
+
+.block-container:first-child {
+  border-left: none;
+}
+
+.block-container {
+  border-left: 1px solid #b29688;
+  margin-top: 10px;
+}
+
+.block-container p {
+  font-size: 1.4rem;
+  color: #b29688;
+  margin-top: 0;
+  padding-left: 5px;
+}
+
+.block-container a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.block-container ul {
+  list-style-type: none;
+  line-height: 2.5rem;
+  padding-left: 10px;
+}
+
+.block-container li {
+  font-size: 1.05rem;
+  font-weight: 100;
+}
+
 .footer {
     min-height: 10vh;
-    background-color: #0b0e18;
 }
 
 .fa {
