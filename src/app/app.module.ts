@@ -16,6 +16,7 @@ import { LeftCardComponent } from './left-card/left-card.component';
 import { MidCardComponent } from './mid-card/mid-card.component';
 import { RightCardComponent } from './right-card/right-card.component';
 import { FooterComponent } from './footer/footer.component';
+import { WorkOffersComponent } from './work-offers/work-offers.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     LeftCardComponent,
     MidCardComponent,
     RightCardComponent,
-    FooterComponent
+    FooterComponent,
+    WorkOffersComponent
   ],
   imports: [
     BrowserModule,
