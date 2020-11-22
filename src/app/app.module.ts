@@ -15,6 +15,7 @@ import { CardListComponent } from './card-list/card-list.component';
 import { LeftCardComponent } from './left-card/left-card.component';
 import { MidCardComponent } from './mid-card/mid-card.component';
 import { RightCardComponent } from './right-card/right-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RightCardComponent } from './right-card/right-card.component';
     CardListComponent,
     LeftCardComponent,
     MidCardComponent,
-    RightCardComponent
+    RightCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

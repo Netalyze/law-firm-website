@@ -9,9 +9,9 @@
   
 }
 
-.card:hover {
+/* .card:hover {
   transform: translate(0.8rem, -0.8rem);
-}
+} */
 
 .card h2 {
   font-weight: 200;

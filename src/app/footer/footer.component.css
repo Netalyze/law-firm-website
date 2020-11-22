@@ -1,0 +1,23 @@
+.footer {
+    min-height: 10vh;
+    background-color: #0b0e18;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 20px;
+    color:  #b29688;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .copyright {
+      width: 100%;
+      text-align: center;
+      color:  #b29688;
+  }

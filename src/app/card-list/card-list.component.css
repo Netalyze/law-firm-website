@@ -14,3 +14,8 @@ ul {
     padding-top: 30px;
     margin-bottom: 20px;
 }
+
+a:link, a:visited {
+    text-decoration: none;
+    
+}

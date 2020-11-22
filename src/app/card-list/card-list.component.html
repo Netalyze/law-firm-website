@@ -4,7 +4,7 @@
     class="cards p-d-flex p-flex-column p-flex-md-row p-jc-evenly p-ai-center p-jc-center p-flex-wrap"
   >
     <li *ngFor="let card of cards" class="p-mb-2 p-mr-2">
-      <app-card [card]="card"></app-card>
+      <a [routerLink]="card.path"><app-card [card]="card"></app-card></a>
     </li>
   </ul>
 </div>
