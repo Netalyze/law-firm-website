@@ -45,6 +45,7 @@
 
 .footer {
     min-height: 10vh;
+    padding: 0 5px 10px 5px;
 }
 
 .fa {
@@ -64,4 +65,6 @@
       width: 100%;
       text-align: center;
       color:  #b29688;
+      font-size: 1rem;
+      font-weight: 100;
   }
