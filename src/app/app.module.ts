@@ -17,6 +17,7 @@ import { MidCardComponent } from './mid-card/mid-card.component';
 import { RightCardComponent } from './right-card/right-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { WorkOffersComponent } from './work-offers/work-offers.component';
+import { ChartsComponent } from './charts/charts.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { WorkOffersComponent } from './work-offers/work-offers.component';
     MidCardComponent,
     RightCardComponent,
     FooterComponent,
-    WorkOffersComponent
+    WorkOffersComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,
