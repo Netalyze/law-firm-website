@@ -7,23 +7,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChartsComponent implements OnInit {
 
-  data: any;
+  barData: any;
+  doughnutData: any;
 
   constructor() {
-    this.data = {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [
-            {
-                label: 'First Dataset',
-                data: [65, 59, 80, 81, 56, 55, 40]
-            },
-            {
-                label: 'Second Dataset',
-                data: [28, 48, 40, 19, 86, 27, 90]
-            }
-        ]
-    }
-}
+    this.barData = {
+      labels: ['2012', '2015', '2016', '2017', '2018', '2019', '2020'],
+      datasets: [
+        {
+          label: '% przegranych spraw',
+          backgroundColor: '#827370',
+          data: [19, 16, 11, 9, 8, 5, 4]
+        },
+        {
+          label: '% wygranych spraw',
+          backgroundColor: '#d7d7cf',
+          data: [81, 84, 89, 91, 92, 95, 96]
+        }
+      ]
+    };
+
+    this.doughnutData = {
+      labels: ['Klienci indywidualni', 'Klienci zagraniczni', 'Firmy'],
+      datasets: [
+        {
+          data: [397, 380, 410],
+          borderColor: [
+            "#827370",
+            "#d7d7cf",
+            "#b29688"
+          ],
+          backgroundColor: [
+            "#827370",
+            "#d7d7cf",
+            "#b29688"
+          ]
+        }]
+    };
+  }
+
 
   ngOnInit(): void {
   }
