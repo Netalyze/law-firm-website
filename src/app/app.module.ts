@@ -17,6 +17,8 @@ import { MidCardComponent } from './mid-card/mid-card.component';
 import { RightCardComponent } from './right-card/right-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { WorkOffersComponent } from './work-offers/work-offers.component';
+import { ChartsComponent } from './charts/charts.component';
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -30,14 +32,16 @@ import { WorkOffersComponent } from './work-offers/work-offers.component';
     MidCardComponent,
     RightCardComponent,
     FooterComponent,
-    WorkOffersComponent
+    WorkOffersComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MenubarModule,
     ButtonModule,
-    CardModule
+    CardModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
