@@ -16,12 +16,13 @@
 }
 
 .block-container {
+  text-transform: uppercase;
   border-left: 1px solid #b29688;
   margin-top: 10px;
 }
 
 .block-container p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #b29688;
   margin-top: 0;
   padding-left: 5px;
@@ -39,7 +40,7 @@
 }
 
 .block-container li {
-  font-size: 1.05rem;
+  font-size: 0.85rem;
   font-weight: 100;
 }
 
