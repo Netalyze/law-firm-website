@@ -18,6 +18,7 @@ import { RightCardComponent } from './right-card/right-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { WorkOffersComponent } from './work-offers/work-offers.component';
 import { ChartsComponent } from './charts/charts.component';
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ChartsComponent } from './charts/charts.component';
     AppRoutingModule,
     MenubarModule,
     ButtonModule,
-    CardModule
+    CardModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
