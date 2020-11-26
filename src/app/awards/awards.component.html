@@ -1,1 +1,10 @@
-<p>awards works!</p>
+<div class="top-text">
+    <h1>Nagrody przyznane naszej kancelarii</h1>
+</div>
+<div class="main-container">
+    <div class="p-grid">
+        <div *ngFor="let award of awards" class="p-col-12 p-md-6 p-lg-3">
+            <app-award [award]="award"></app-award>
+        </div>
+    </div>
+</div>

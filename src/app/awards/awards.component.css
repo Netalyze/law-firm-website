@@ -1,0 +1,16 @@
+.top-text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.top-text h1 {
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+}
+
+.main-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
