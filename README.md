@@ -1,11 +1,11 @@
 # TODO list
 ## Strona główna
 - Sekcja typu:
-  1. Nasze nagrody
-  2. Zaufali nam
-  3. ~~Statystyki wygranych spraw + mogą być jakieś wykresy~~
+  1. ~~Nasze nagrody~~
+  2. ~~Statystyki wygranych spraw + mogą być jakieś wykresy~~
+  3. Jeśli ktoś z was ma pomysł na ostatnią sekcje z kontaktem to śmiało coś dodajcie
 
-- ~~Stopka~~ chociaż możliwe że coś tam jeszcze można wrzucić, ale niekoniecznie
+- ~~Stopka~~ 
 
 ## Podstrony
 - Mapka, obojętnie czy z ofertami pracy czy z lokalizacjami kancelarii
