@@ -1,7 +1,7 @@
 /*Wystylowanie bannera - wysokość do zmiany żeby zgrywała się dobrze z menu*/
 .banner {
     width: 100%;
-    background-image: url("../../assets/images/banner.jpg");
+    background-image: url("../../assets/images/banner.jpeg");
     height: 90vh;
     background-position: center;
     background-size: cover;
