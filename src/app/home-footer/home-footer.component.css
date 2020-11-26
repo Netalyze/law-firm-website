@@ -1,0 +1,27 @@
+.content {
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content h1 {
+    color: #16253f;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+}
+
+.material-icons {
+    font-size: 48px;
+    color: #b29688;
+}
+
+.number {
+    font-size: 40px;
+    margin: 20px;
+}
+
+a {
+    text-decoration: underline;
+    color: #16253f;
+}
