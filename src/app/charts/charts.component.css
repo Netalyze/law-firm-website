@@ -1,17 +1,21 @@
+.main-container {
+    background-color: #ffffff;
+}
+
 .charts-top {
     text-align: center;
-    border-top: 1px solid #b29688;
+    border-top: 1px solid #16253f;
 }
 
 .chart-container p{
     text-align: center;
-    color: lightgray;
+    color: #16253f;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .charts-top h1 {
-    color: #b29688;
+    color: #16253f;
     font-weight: lighter;
     letter-spacing: 0.05rem;
 }

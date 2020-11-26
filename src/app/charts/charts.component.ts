@@ -21,7 +21,7 @@ export class ChartsComponent implements OnInit {
         },
         {
           label: '% wygranych spraw',
-          backgroundColor: '#d7d7cf',
+          backgroundColor: '#557a95',
           data: [81, 84, 89, 91, 92, 95, 96]
         }
       ]
@@ -35,12 +35,12 @@ export class ChartsComponent implements OnInit {
           borderColor: [
             "#827370",
             "#d7d7cf",
-            "#b29688"
+            "#557a95"
           ],
           backgroundColor: [
             "#827370",
             "#d7d7cf",
-            "#b29688"
+            "#557a95"
           ]
         }]
     };

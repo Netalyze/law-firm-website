@@ -1,22 +1,17 @@
-/* Odstęp menubara przed logo */
 :host ::ng-deep .p-menubar {
-  background-color: #121727;
+  background-color: #16253f;
   border: none;
   border-radius: 0;
   padding: 30px 30px 30px 90px;
 }
 
-/* Pozycja logo przy oknie większym niż 960 px */
 :host ::ng-deep .p-menubar #logo {
   position: absolute;
   left: 20px;
-  top: 25px;
+  top: 20px;
   height: 50px;
 }
 
-/* Logo przy oknie mniejszym niż 960 px
-Uwaga: Wartość musi zgadzać się z tą w themes.css 
-*/
 @media screen and (max-width: 960px) {
   :host ::ng-deep .p-menubar #logo {
     top: 19px;
@@ -24,60 +19,53 @@ Uwaga: Wartość musi zgadzać się z tą w themes.css
   }
 }
 
-/* Obwódka elementu w menu */
 :host ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:focus {
   box-shadow: none;
 }
 
-/* Kolor elementu menu po hooverze */
 :host ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link,
 .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link:not(.p-disabled):hover {
-  background: #121727;
+  background: #16253f;
 }
 
-/* Kolor tła submenu */
 :host ::ng-deep .p-menubar .p-submenu-list {
-  background: #121727;
+  background: #16253f;
 }
 
-/* Kolor tła menu */
 :host ::ng-deep .p-menubar .p-menubar-root-list {
-  background: #121727;
+  background: #16253f;
 }
 
-/* Hover na elemencie menu */
-:host ::ng-deep .p-menuitem a:hover {
-  background-color: #121727 !important;
+:host ::ng-deep .p-menuitem a:hover, .p-menuitem-text {
+  background-color: #16253f !important;
+  color: #ffffff !important;
   text-decoration: underline;
-  text-decoration-color: #b29688;
+  text-decoration-color: #ffffff;
   text-decoration-style: solid;
 }
 
-/* Styling tekstu w menu */
 :host ::ng-deep .p-menuitem-text {
-  color: #b29688 !important;
+  color: #ffffff !important;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 200;
 }
 
-/* Kolory przyciku rozwijania menu */
 :host ::ng-deep .p-menubar-button {
-  color: #b29688;
+  color: #ffffff;
 }
 
 :host ::ng-deep .p-menubar-button:hover {
-  color: #121727;
-  background-color: #b29688;
+  color: #16253f;
+  background-color: #ffffff;
 }
 
-/* Obwódka przycisku hamburger rozwijania menu */
 :host ::ng-deep .p-menubar .p-menubar-button:focus {
   box-shadow: none;
 }
 
 :host ::ng-deep .p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link {
-  background: #121727;
+  background: #16253f;
 }
 
 :host ::ng-deep .p-menubar .p-menuitem-link:focus {

@@ -5,7 +5,7 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.4), 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
   transition: 0.5s ease;
   margin: 2rem;
-  background-color: #111624;
+  background-color: #ffffff;
   
 }
 
@@ -25,11 +25,11 @@
   font-weight: 200;
   letter-spacing: 0.03em;
   transition: 0.5s ease;
-  color: #b29688;
+  color: #16253f;
 }
 
 .card p {
-  color: lightgrey;
+  color: #16253f;
 }
 
 .card .image {
@@ -38,13 +38,12 @@
   background-position: center;
   background-size: cover;
   margin-bottom: 0.5rem;
-  filter: brightness(80%);
 }
 
 .icon-btn {
   height: 4rem;
   width: 4rem;
-  background-color: whitesmoke;
+  background-color: #ffffff;
   transition: 0.5s ease;
   color: black;
 }
