@@ -1,27 +1,21 @@
-import { Component, OnInit, HostListener, Input } from '@angular/core';
-import { Location } from '@angular/common';
-@Component({
-  selector: 'app-work-offers',
-  templateUrl: './work-offers.component.html',
-  styleUrls: ['./work-offers.component.css']
-})
-export class WorkOffersComponent implements OnInit {
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
-  scrHeight:any;
-  scrWidth:any;
-  lng = 7.809007; 
-  lat = 51.678418;
-  @Input() itemSelected = false;
-  offers = [
+@Component({
+  selector: 'app-offers-list',
+  templateUrl: './offers-list.component.html',
+  styleUrls: ['./offers-list.component.css']
+})
+export class OffersListComponent implements OnInit {
+
+  @Output() offerClick = new EventEmitter();
+  @Input() offers: any = [
     {
       'offerId': '1',
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : 7.809007, 
-        'officeLat': 51.678418, 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -31,10 +25,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '',
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -44,10 +36,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '',
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -57,10 +47,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -70,10 +58,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -83,10 +69,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -96,10 +80,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -109,10 +91,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -122,10 +102,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -135,10 +113,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -148,10 +124,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -161,10 +135,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -174,10 +146,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -187,10 +157,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -200,10 +168,8 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
@@ -213,43 +179,24 @@ export class WorkOffersComponent implements OnInit {
       'companyName': 'Company',
       'position' : 'Fullstack Angular Developer',
       'city' : 'Wrocław',
-      'officeLoc': {
-        'officeLong' : '', 
-        'officeLat': '', 
-      }, 
+      'officeLong' : '', 
+      'officeLat': '', 
       'salary' : '10000',
       'logoSrc': '', 
       'requiredSkills': ['Angular', 'Spring', 'English']
     },
 
   ];
+  markers = [];
 
-  constructor(private location: Location) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.scrHeight = window.innerHeight;
-    this.scrWidth = window.innerWidth;
+    
   }
 
-  @HostListener('window:resize', ['$event'])
-  getScreenSize(event?) {
-        this.scrHeight = window.innerHeight;
-        this.scrWidth = window.innerWidth;
-  }
-
-  markerClicked(event) {
-    this.itemSelected = true;
-    this.location.replaceState(`/szczegoly-oferty/${this.offers[event.id()].offerId}`);
-  }
-
-  offerClicked(event) {
-    this.itemSelected = true;
-    this.location.replaceState(`/szczegoly-oferty/${event}`);
-  }
-
-  detailsClosed(event) {
-    this.itemSelected = false;
-    this.location.replaceState('/oferty-pracy');
+  offerItemClicked(offerId) {
+    this.offerClick.emit(offerId);
   }
 
 }

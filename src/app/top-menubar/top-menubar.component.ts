@@ -31,7 +31,7 @@ export class TopMenubarComponent implements OnInit {
         label: 'Usługi'
       },
       {
-        label: 'Oferty pracy',
+        label: 'Oferty pracy', routerLink: ['/oferty-pracy'],
       },
       {
         label: 'Kontakt'

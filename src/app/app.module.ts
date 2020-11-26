@@ -19,7 +19,10 @@ import { FooterComponent } from './footer/footer.component';
 import { WorkOffersComponent } from './work-offers/work-offers.component';
 import { ChartsComponent } from './charts/charts.component';
 import { ChartModule } from 'primeng/chart';
-
+import { AgmCoreModule } from '@agm/core';
+import { OfferDetailsComponent } from './offer-details/offer-details.component';
+import { OffersListComponent } from './offers-list/offers-list.component';
+import {DataViewModule} from 'primeng/dataview';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,9 @@ import { ChartModule } from 'primeng/chart';
     RightCardComponent,
     FooterComponent,
     WorkOffersComponent,
-    ChartsComponent
+    ChartsComponent,
+    OfferDetailsComponent,
+    OffersListComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +46,11 @@ import { ChartModule } from 'primeng/chart';
     MenubarModule,
     ButtonModule,
     CardModule,
-    ChartModule
+    ChartModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD-16wLkXXtESzJd5b_2hzqcwb1oUav_aQ'
+    }),
+    DataViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

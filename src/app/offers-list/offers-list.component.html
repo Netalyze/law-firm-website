@@ -1,0 +1,24 @@
+<div class="offers-list p-d-flex p-ai-center p-jc-center">
+    <div class="card p-d-flex p-ai-center p-jc-center">
+        <p-dataView class="offers"  [paginator]="true" [rows]="12" [value]="offers">
+            <p-header>Aktywne oferty pracy</p-header>
+            <ng-template let-offer pTemplate="listItem">
+                <div class="p-col-12">
+                    <div class="offer-list-item" (click)="offerItemClicked(offer.offerId)">
+                        <div class="offer-list-detail">
+                            <div class="offer-position">{{offer.position}}</div>
+                            <i class="pi pi-map-marker offer-icon"></i><span class="icon-information">{{offer.city}}</span>
+                            <i class="pi pi-home offer-icon"></i><span class="icon-information">{{offer.companyName}}</span>
+                        </div>
+                        <div class="offer-list-propositions">
+                            <span class="offer-salary">${{offer.salary}}</span>
+                            <div class="skillset">
+                                <span *ngFor="let skill of offer.requiredSkills" class="p-tag p-tag-rounded skill">{{skill}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-dataView>
+    </div>   
+</div>
