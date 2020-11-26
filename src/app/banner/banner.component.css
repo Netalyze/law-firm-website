@@ -1,4 +1,3 @@
-/*Wystylowanie bannera - wysokość do zmiany żeby zgrywała się dobrze z menu*/
 .banner {
     width: 100%;
     background-image: url("../../assets/images/banner.jpeg");
@@ -9,22 +8,20 @@
     overflow: hidden;
 }
 
-/* Tekst nad przyciskiem */
 p {
-    color: #b29688;
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
 }
 
-/*Kontener na button i naglowek*/
 .p-d-flex {
     height: 90vh;
     width: 50%;
 }
 
-/* Kolor przycisku */
 .p-button-lg {
     background: none;
-    border-color: lightgray;
-    color: lightgray;
+    border-color: #ffffff;
+    color: #ffffff;
     border-radius: 0;
 }
 
@@ -37,13 +34,9 @@ p {
 .content {
     font-size: 2rem;
     margin-bottom: 0.3rem;
+    text-align: center;
 }
 
-@media screen and (max-width: 960px) {
-    .p-d-flex {
-        width: 100%;
-    }
-    .content {
-        text-align: center;
-    }
+.p-d-flex {
+    width: 100%;
 }
