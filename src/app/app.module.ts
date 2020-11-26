@@ -23,6 +23,8 @@ import { AgmCoreModule } from '@agm/core';
 import { OfferDetailsComponent } from './offer-details/offer-details.component';
 import { OffersListComponent } from './offers-list/offers-list.component';
 import {DataViewModule} from 'primeng/dataview';
+import { AwardComponent } from './award/award.component';
+import { AwardsComponent } from './awards/awards.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,9 @@ import {DataViewModule} from 'primeng/dataview';
     WorkOffersComponent,
     ChartsComponent,
     OfferDetailsComponent,
-    OffersListComponent
+    OffersListComponent,
+    AwardComponent,
+    AwardsComponent
   ],
   imports: [
     BrowserModule,
