@@ -26,6 +26,7 @@ import {DataViewModule} from 'primeng/dataview';
 import { AwardComponent } from './award/award.component';
 import { AwardsComponent } from './awards/awards.component';
 import { HomeFooterComponent } from './home-footer/home-footer.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +45,8 @@ import { HomeFooterComponent } from './home-footer/home-footer.component';
     OffersListComponent,
     AwardComponent,
     AwardsComponent,
-    HomeFooterComponent
+    HomeFooterComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
