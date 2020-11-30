@@ -21,16 +21,16 @@ export class TopMenubarComponent implements OnInit {
       {
         label: 'Usługi',
         items: [
-          {label: 'Wypadki', routerLink: ['/wypadki-drogowe']},
-          {label: 'Rozwody', routerLink: ['/sprawy-rozwodowe']},
-          {label: 'Prawo karne', routerLink: ['/prawo-karne']}
+          { label: 'Wypadki', routerLink: ['/wypadki-drogowe'] },
+          { label: 'Rozwody', routerLink: ['/sprawy-rozwodowe'] },
+          { label: 'Prawo karne', routerLink: ['/prawo-karne'] }
         ]
       },
       {
         label: 'Oferty pracy', routerLink: ['/oferty-pracy'],
       },
       {
-        label: 'Kontakt'
+        label: 'Kontakt', routerLink: ['/kontakt']
       }
     ];
   }
