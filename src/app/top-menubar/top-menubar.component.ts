@@ -19,22 +19,18 @@ export class TopMenubarComponent implements OnInit {
         label: 'O nas'
       },
       {
-        label: 'Nasze kancelarie',
+        label: 'Usługi',
         items: [
-          {label: 'Gdańsk'},
-          {label: 'Katowice'},
-          {label: 'Warszawa'},
-          {label: 'Wrocław'}
+          { label: 'Wypadki', routerLink: ['/wypadki-drogowe'] },
+          { label: 'Rozwody', routerLink: ['/sprawy-rozwodowe'] },
+          { label: 'Prawo karne', routerLink: ['/prawo-karne'] }
         ]
-      },
-      {
-        label: 'Usługi'
       },
       {
         label: 'Oferty pracy', routerLink: ['/oferty-pracy'],
       },
       {
-        label: 'Kontakt'
+        label: 'Kontakt', routerLink: ['/kontakt']
       }
     ];
   }

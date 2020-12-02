@@ -6,6 +6,7 @@ import { MidCardComponent } from './mid-card/mid-card.component';
 import { OfferDetailsComponent } from './offer-details/offer-details.component';
 import { RightCardComponent } from './right-card/right-card.component';
 import { WorkOffersComponent } from './work-offers/work-offers.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'sprawy-rozwodowe', component: MidCardComponent},
   { path: 'prawo-karne', component: RightCardComponent},
   { path: 'oferty-pracy', component: WorkOffersComponent},
-  { path: 'szczegoly-oferty/:id', component: OfferDetailsComponent}
+  { path: 'szczegoly-oferty/:id', component: OfferDetailsComponent},
+  { path: 'kontakt', component: ContactFormComponent}
 ];
 
 @NgModule({

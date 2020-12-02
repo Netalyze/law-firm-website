@@ -1,0 +1,18 @@
+<div class="main-container">
+    <h1>Skontaktuj się z nami</h1>
+    <div class="form-group">
+        <h2>Imię</h2>
+        <input type="text" pInputText [(ngModel)]="name">
+        <h2>Nazwisko</h2>
+        <input type="text" pInputText [(ngModel)]="surename"> 
+        <h3>Proszę o kontakt przez:</h3>
+        <div class="p-field-radiobutton">
+            <p-radioButton name="city" value="email" [(ngModel)]="contact" inputId="city1"></p-radioButton>
+            <label for="city1">Adres email</label>
+        </div>
+        <div class="p-field-radiobutton">
+            <p-radioButton name="city" value="phone" [(ngModel)]="contact" inputId="city1"></p-radioButton>
+            <label for="city1">Telefon</label>
+        </div>
+    </div>
+</div>
