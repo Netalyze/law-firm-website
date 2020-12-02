@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { TopMenubarComponent } from './top-menubar/top-menubar.component';
 
 import { MenubarModule } from 'primeng/menubar';
-import {ButtonModule} from 'primeng/button';
-import {CardModule} from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 import { BannerComponent } from './banner/banner.component';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
@@ -22,11 +22,15 @@ import { ChartModule } from 'primeng/chart';
 import { AgmCoreModule } from '@agm/core';
 import { OfferDetailsComponent } from './offer-details/offer-details.component';
 import { OffersListComponent } from './offers-list/offers-list.component';
-import {DataViewModule} from 'primeng/dataview';
+import { DataViewModule } from 'primeng/dataview';
 import { AwardComponent } from './award/award.component';
 import { AwardsComponent } from './awards/awards.component';
 import { HomeFooterComponent } from './home-footer/home-footer.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormsModule } from '@angular/forms';
+import { KeyFilterModule } from 'primeng/keyfilter';
+import { RadioButtonModule } from 'primeng/radiobutton';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +62,10 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD-16wLkXXtESzJd5b_2hzqcwb1oUav_aQ'
     }),
-    DataViewModule
+    DataViewModule,
+    FormsModule,
+    KeyFilterModule,
+    RadioButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

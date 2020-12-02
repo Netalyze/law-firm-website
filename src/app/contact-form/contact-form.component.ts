@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {InputTextModule} from 'primeng/inputtext';
 
 @Component({
   selector: 'app-contact-form',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent implements OnInit {
+
+  name: string;
+  surename: string;
+  contact: string;
 
   constructor() { }
 
