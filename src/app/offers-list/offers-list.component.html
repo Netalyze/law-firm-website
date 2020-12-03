@@ -4,7 +4,7 @@
             <p-header>Aktywne oferty pracy</p-header>
             <ng-template let-offer pTemplate="listItem">
                 <div class="p-col-12">
-                    <div class="offer-list-item" (click)="offerItemClicked(offer.offerId)">
+                    <div class="offer-list-item" (click)="offerItemClicked(offer)">
                         <div class="offer-list-detail">
                             <div class="offer-position">{{offer.position}}</div>
                             <i class="pi pi-map-marker offer-icon"></i><span class="icon-information">{{offer.city}}</span>

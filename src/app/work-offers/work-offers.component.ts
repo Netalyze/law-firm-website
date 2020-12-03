@@ -12,6 +12,8 @@ export class WorkOffersComponent implements OnInit {
   lng = 7.809007; 
   lat = 51.678418;
   @Input() itemSelected = false;
+  item;
+
   offers = [
     {
       'offerId': '1',
@@ -240,11 +242,13 @@ export class WorkOffersComponent implements OnInit {
   markerClicked(event) {
     this.itemSelected = true;
     this.location.replaceState(`/szczegoly-oferty/${this.offers[event.id()].offerId}`);
+    this.item = event;
   }
 
   offerClicked(event) {
     this.itemSelected = true;
-    this.location.replaceState(`/szczegoly-oferty/${event}`);
+    this.location.replaceState(`/szczegoly-oferty/${event.offerId}`);
+    this.item = event;
   }
 
   detailsClosed(event) {

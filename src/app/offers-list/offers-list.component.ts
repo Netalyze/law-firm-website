@@ -195,8 +195,8 @@ export class OffersListComponent implements OnInit {
     
   }
 
-  offerItemClicked(offerId) {
-    this.offerClick.emit(offerId);
+  offerItemClicked(offer) {
+    this.offerClick.emit(offer);
   }
 
 }
