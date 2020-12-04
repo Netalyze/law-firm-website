@@ -10,11 +10,18 @@ export class ContactFormComponent implements OnInit {
 
   name: string;
   surename: string;
-  contact: string;
+  phoneNumber: string;
+  emailAddress: string;
+  contactType: string;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+  }
+
+  submit(): void {
+    var result = this.name + ' ' + this.surename;
+    console.log(result);
   }
 
 }

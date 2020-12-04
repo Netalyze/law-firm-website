@@ -30,6 +30,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule } from '@angular/forms';
 import { KeyFilterModule } from 'primeng/keyfilter';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -65,7 +67,9 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     DataViewModule,
     FormsModule,
     KeyFilterModule,
-    RadioButtonModule
+    RadioButtonModule,
+    InputTextareaModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

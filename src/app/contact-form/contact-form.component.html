@@ -2,17 +2,37 @@
     <h1>Skontaktuj się z nami</h1>
     <div class="form-group">
         <h2>Imię</h2>
-        <input type="text" pInputText [(ngModel)]="name">
+        <input type="text" pInputText class="p-inputtext-lg" [(ngModel)]="name">
+        
         <h2>Nazwisko</h2>
-        <input type="text" pInputText [(ngModel)]="surename"> 
+        <input type="text" pInputText class="p-inputtext-lg" [(ngModel)]="surename"> 
         <h3>Proszę o kontakt przez:</h3>
         <div class="p-field-radiobutton">
-            <p-radioButton name="city" value="email" [(ngModel)]="contact" inputId="city1"></p-radioButton>
-            <label for="city1">Adres email</label>
+            <p-radioButton name="contact1" value="email" [(ngModel)]="contactType"></p-radioButton>
+            <label for="contact1">Adres email</label>
         </div>
         <div class="p-field-radiobutton">
-            <p-radioButton name="city" value="phone" [(ngModel)]="contact" inputId="city1"></p-radioButton>
-            <label for="city1">Telefon</label>
+            <p-radioButton name="contact2" value="phone" [(ngModel)]="contactType"></p-radioButton>
+            <label for="contact2">Telefon</label>
+        </div>
+
+        <div class="contact-input" *ngIf="contactType == 'email'">
+            <h3>Adres email</h3>
+            <input type="text" pKeyFilter="email" pInputText [(ngModel)]="emailAddress">
+        </div>
+
+        <div class="contact-input" *ngIf="contactType == 'phone'">
+            <h3>Numer telefonu</h3>
+            <input type="text" pKeyFilter="num" pInputText [(ngModel)]="phoneNumber">
+        </div>
+
+        <div class="textarea-container">
+            <h3>Wiadomość</h3>
+            <textarea [rows]="5" [cols]="30" pInputTextarea autoResize="autoResize"></textarea>
+        </div>
+
+        <div class="button-container">
+            <button pButton type="button" label="Wyślij" icon="pi pi-check" class="p-button-lg" (onClick)="submit()"></button>
         </div>
     </div>
 </div>
