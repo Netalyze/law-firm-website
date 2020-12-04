@@ -37,6 +37,10 @@ p {
     text-align: center;
 }
 
+:host ::ng-deep .p-button:focus {
+    box-shadow: none;
+}
+
 .p-d-flex {
     width: 100%;
 }
