@@ -6,7 +6,7 @@
         
         <h2>Nazwisko</h2>
         <input type="text" pInputText class="p-inputtext-lg" [(ngModel)]="surename"> 
-        <h3>Proszę o kontakt przez:</h3>
+        <h2>Proszę o kontakt przez:</h2>
         <div class="p-field-radiobutton">
             <p-radioButton name="contact1" value="email" [(ngModel)]="contactType"></p-radioButton>
             <label for="contact1">Adres email</label>
@@ -17,17 +17,17 @@
         </div>
 
         <div class="contact-input" *ngIf="contactType == 'email'">
-            <h3>Adres email</h3>
-            <input type="text" pKeyFilter="email" pInputText [(ngModel)]="emailAddress">
+            <h2>Adres email</h2>
+            <input type="text" pKeyFilter="email" pInputText class="p-inputtext-lg" [(ngModel)]="emailAddress">
         </div>
 
         <div class="contact-input" *ngIf="contactType == 'phone'">
-            <h3>Numer telefonu</h3>
-            <input type="text" pKeyFilter="num" pInputText [(ngModel)]="phoneNumber">
+            <h2>Numer telefonu</h2>
+            <input type="text" pKeyFilter="num" pInputText class="p-inputtext-lg" [(ngModel)]="phoneNumber">
         </div>
 
         <div class="textarea-container">
-            <h3>Wiadomość</h3>
+            <h2>Wiadomość</h2>
             <textarea [rows]="5" [cols]="30" pInputTextarea autoResize="autoResize"></textarea>
         </div>
 
