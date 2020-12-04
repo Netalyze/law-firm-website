@@ -1,5 +1,5 @@
 <div class="p-d-flex p-flex-row">
-  <div *ngIf="scrHeight > 720 && scrWidth > 1280" class="map">
+  <div *ngIf="scrWidth > 1280" class="map">
     <agm-map [latitude]="lat" [longitude]="lng">
       <agm-marker *ngFor="let offer of offers" [latitude]="offer.officeLoc.officeLat" [longitude]="offer.officeLoc.officeLong" (markerClick)="markerClicked($event)"></agm-marker>
     </agm-map>
