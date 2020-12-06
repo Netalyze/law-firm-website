@@ -24,7 +24,7 @@ export class ChartsComponent implements OnInit {
           backgroundColor: '#557a95',
           data: [81, 84, 89, 91, 92, 95, 96]
         }
-      ]
+      ],
     };
 
     this.doughnutData = {
