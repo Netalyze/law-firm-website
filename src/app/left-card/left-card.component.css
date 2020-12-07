@@ -1,6 +1,6 @@
 .outer-container {
     width: 100%;
-    background-color: #ffffff;
+    background-color:rgb(245, 245, 245);
     padding-top: 1px;
     padding-bottom: 20px;
 }
@@ -8,7 +8,7 @@
 .main-container {
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #ffffff;
+    background-color:rgb(245, 245, 245);
 }
 
 .top-image-container {

@@ -5,8 +5,7 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.4), 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
   transition: 0.5s ease;
   margin: 2rem;
-  background-color:rgb(228, 225, 225);
-  
+  background-color:rgb(245, 245, 245);
 }
 
 @media screen and (max-width: 992px) {
@@ -43,7 +42,7 @@
 .icon-btn {
   height: 4rem;
   width: 4rem;
-  background-color: #ffffff;
+  background-color:rgb(245, 245, 245);
   transition: 0.5s ease;
   color: black;
 }
