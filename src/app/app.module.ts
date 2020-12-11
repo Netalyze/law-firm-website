@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopMenubarComponent } from './top-menubar/top-menubar.component';
-
+import {ToastModule} from 'primeng/toast';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
@@ -20,7 +20,6 @@ import { WorkOffersComponent } from './work-offers/work-offers.component';
 import { ChartsComponent } from './charts/charts.component';
 import { ChartModule } from 'primeng/chart';
 import { AgmCoreModule } from '@agm/core';
-import { OfferDetailsComponent } from './offer-details/offer-details.component';
 import { OffersListComponent } from './offers-list/offers-list.component';
 import { DataViewModule } from 'primeng/dataview';
 import { AwardComponent } from './award/award.component';
@@ -32,6 +31,8 @@ import { KeyFilterModule } from 'primeng/keyfilter';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import {InputTextModule} from 'primeng/inputtext';
+import { MessageService } from 'primeng/api';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,6 @@ import {InputTextModule} from 'primeng/inputtext';
     FooterComponent,
     WorkOffersComponent,
     ChartsComponent,
-    OfferDetailsComponent,
     OffersListComponent,
     AwardComponent,
     AwardsComponent,
@@ -69,9 +69,11 @@ import {InputTextModule} from 'primeng/inputtext';
     KeyFilterModule,
     RadioButtonModule,
     InputTextareaModule,
-    InputTextModule
+    InputTextModule,
+    ToastModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

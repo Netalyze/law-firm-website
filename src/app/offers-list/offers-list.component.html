@@ -11,7 +11,7 @@
                             <i class="pi pi-home offer-icon"></i><span class="icon-information">{{offer.companyName}}</span>
                         </div>
                         <div class="offer-list-propositions">
-                            <span class="offer-salary">${{offer.salary}}</span>
+                            <span class="offer-salary">PLN {{offer.salary}}</span>
                             <div class="skillset">
                                 <span *ngFor="let skill of offer.requiredSkills" class="p-tag p-tag-rounded skill">{{skill}}</span>
                             </div>
