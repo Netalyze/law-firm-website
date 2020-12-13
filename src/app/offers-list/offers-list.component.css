@@ -35,6 +35,7 @@
     padding: 1rem;
     width: 100%;
     cursor: pointer;
+    background-color:rgb(245, 245, 245);
 }
 
 :host ::ng-deep .offer-list-item img {
@@ -80,4 +81,22 @@
 
 .offers {
     width: 100%;
+}
+
+:host ::ng-deep .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background:#b29688;
+    border-color: #b29688;
+}
+
+.p-tag {
+    background: #b29688;
+    color: #ffffff;
+}
+
+:host ::ng-deep .p-dataview .p-dataview-header {
+    background:rgb(245, 245, 245);
+}
+
+:host ::ng-deep .p-link:focus {
+    box-shadow: none;
 }
